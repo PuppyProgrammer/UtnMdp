@@ -7,6 +7,18 @@ font-family: 'Raleway', sans-serif;
     max-width: 960px; 
     background: url(./fondo.png);
     background-size: cover;
+    animation-name: text-opacity;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes text-opacity {
+	0% {
+		opacity: 0;
+	}
+   
+    100% {
+        opacity: 1;
+    }
 }
 
 header {
@@ -15,19 +27,28 @@ header {
     align-items: center;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    animation: moved 1.5s;
+    position: relative;
+}
+
+@keyframes moved {
+    0% {
+        margin-bottom: 200px;
+        margin-left: 300px;
+    }
 }
 
 .title-name {
     color: white; 
    justify-content: space-around;
    font-family: 'Raleway', sans-serif;
-   
 }
 
 section {
     display: flex;
     justify-content: space-between;
     font-family: 'Raleway', sans-serif;
+   
 }
 
 aside {
@@ -36,6 +57,28 @@ aside {
     padding: 3px 6px;
     border-radius: 25px;
     margin-top: 25px;
+    animation: move;
+    animation-duration: 2s;
+    position: relative; 
+}
+
+@keyframes move {
+    0% {
+        padding-right: -30%;
+    }
+}
+
+.box {
+    position: relative;
+    animation: moves;
+    animation-duration: 1s;
+}
+
+@keyframes moves {
+    0% {
+        padding-left: 30%;
+        
+    }
 }
 
 article {
@@ -49,3 +92,16 @@ article {
     text-align: justify;
 }
 
+.type-writer {
+    white-space: nowrap;
+    width: 22ch;
+    animation: typing 1s steps(22);    
+    overflow: hidden;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
