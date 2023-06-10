@@ -1,53 +1,51 @@
+/*
+font-family: 'Raleway', sans-serif;
+*/
+
 .holder {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 960px; 
+    background: url(./fondo.png);
+    background-size: cover;
 }
 
 header {
+    background-color: rgba(16, 16, 94, 0.351);
     display: flex;
     align-items: center;
-    background-color: aquamarine;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
 .title-name {
+    color: white; 
    justify-content: space-around;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: 'Raleway', sans-serif;
+   
 }
 
 section {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
 }
 
-article:nth-child(1) {
-    flex-direction: column;
-    width: 250px;
-    background-color: rgb(210, 241, 216);
+aside {
+    background-color: rgba(28, 28, 155, 0.351);
+    color: white; 
     padding: 3px 6px;
     border-radius: 25px;
     margin-top: 25px;
 }
 
-article:nth-child(2) {
-    background-color: rgb(210, 241, 216);
-    width:650px;
+article {
+    background-color: rgba(28, 28, 155, 0.351);
+    color: white; 
     margin-top: 25px;
     height: fit-content;
     padding: 6px 9px;
     border-radius: 25px;
-    
-
-}
-
-article:nth-child(3) {
-    background-color: rgb(210, 241, 216);
-    width: 650px;
-    margin-top: 25px;
-    height: fit-content;
-    padding: 6px 9px;
-    border-radius: 25px;
+    margin-left: 25px;
+    text-align: justify;
 }
 
