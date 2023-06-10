@@ -92,16 +92,4 @@ article {
     text-align: justify;
 }
 
-.type-writer {
-    white-space: nowrap;
-    width: 22ch;
-    animation: typing 1s steps(22);    
-    overflow: hidden;
-}
 
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
