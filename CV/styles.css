@@ -8,18 +8,17 @@ font-family: 'Raleway', sans-serif;
     background: url(./fondo.png);
     background-size: cover;
     animation-name: text-opacity;
-	animation-duration: 4s;
+	animation-duration: 5s;
 	animation-fill-mode: forwards;
 }
-@keyframes text-opacity {
+ @keyframes text-opacity {
 	0% {
 		opacity: 0;
 	}
-   
     100% {
         opacity: 1;
     }
-}
+} 
 
 header {
     background-color: rgba(16, 16, 94, 0.351);
@@ -27,13 +26,13 @@ header {
     align-items: center;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    animation: moved 1.5s;
+    animation: moved 1s;
+    animation-timing-function: linear;
     position: relative;
 }
 
-@keyframes moved {
+ @keyframes moved {
     0% {
-        margin-bottom: 200px;
         margin-left: 300px;
     }
 }
@@ -48,7 +47,15 @@ section {
     display: flex;
     justify-content: space-between;
     font-family: 'Raleway', sans-serif;
-   
+    animation: text-opacity 3s;
+    animation: movee 2s;
+    
+}
+
+@keyframes movee {
+    0% {
+        margin-top: 200px;
+    }
 }
 
 aside {
@@ -57,28 +64,6 @@ aside {
     padding: 3px 6px;
     border-radius: 25px;
     margin-top: 25px;
-    animation: move;
-    animation-duration: 2s;
-    position: relative; 
-}
-
-@keyframes move {
-    0% {
-        padding-right: -30%;
-    }
-}
-
-.box {
-    position: relative;
-    animation: moves;
-    animation-duration: 1s;
-}
-
-@keyframes moves {
-    0% {
-        padding-left: 30%;
-        
-    }
 }
 
 article {
