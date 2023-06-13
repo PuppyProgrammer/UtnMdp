@@ -26,14 +26,17 @@ header {
     align-items: center;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    animation: moved 1s;
-    animation-timing-function: linear;
+    animation: moved 2.5s;
     position: relative;
 }
 
  @keyframes moved {
-    0% {
-        margin-left: 300px;
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -48,14 +51,6 @@ section {
     justify-content: space-between;
     font-family: 'Raleway', sans-serif;
     animation: text-opacity 3s;
-    animation: movee 2s;
-    
-}
-
-@keyframes movee {
-    0% {
-        margin-top: 200px;
-    }
 }
 
 aside {
@@ -64,7 +59,21 @@ aside {
     padding: 3px 6px;
     border-radius: 25px;
     margin-top: 25px;
+    animation: exito 2.5s;
 }
+
+@keyframes exito {
+    from {
+        transform: translateX(-300px);
+        
+    }
+
+    to {
+        transform: translateX(0);
+        
+    }
+}
+
 
 article {
     background-color: rgba(28, 28, 155, 0.351);
@@ -77,4 +86,33 @@ article {
     text-align: justify;
 }
 
+.try {
+    animation: exitoo 2.5s;
+}
 
+@keyframes exitoo {
+    from {
+        transform: translateX(200px);
+        
+    }
+
+    to {
+        transform: translateX(0);
+        
+    }
+}
+
+.prueba {
+    animation: exitooo 2.5s;
+}
+
+@keyframes exitooo {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+    
+}
