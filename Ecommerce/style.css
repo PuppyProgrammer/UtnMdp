@@ -93,21 +93,78 @@ nav ul li a:hover {
   }
 }
 
-.ustedes {
+h3 {
   display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-family: 'Dancing Script', cursive;
+  padding-bottom: 50px;
+}
+
+.maincontainer {
+  position: relative;
   margin: auto;
-  max-width: 1150px;
+  width: 1150px;
+  height: 500px;
+  
 }
 
-.caja {
+.thecard {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: url(./uñas.png);
+  background-size: cover;
+  border-radius: 20%;
+  
+  
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: url(./uñas.png);
+  background-size: cover;
+  border-radius: 20%;
+  transform: rotateY(180deg);
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
 }
 
-.caja img {
-  width: 70%;
+.theback:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+  
+}
+
+.theback button {
+  position: absolute;
+  bottom: 20%;
+  padding: 10px 40px 10px 40px;
   border-radius: 20px;
-  border: 3px solid black;
 }
-
-
