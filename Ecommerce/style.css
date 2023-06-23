@@ -103,9 +103,9 @@ h3 {
 
 .maincontainer {
   position: relative;
-  margin: auto;
-  width: 1150px;
-  height: 500px;
+  margin-left: 250px;
+  width: 750px;
+  height: 350px;
   
 }
 
@@ -129,8 +129,6 @@ h3 {
   background: url(./uñas.png);
   background-size: cover;
   border-radius: 20%;
-  
-  
 }
 
 .theback {
@@ -142,13 +140,15 @@ h3 {
   background-size: cover;
   border-radius: 20%;
   transform: rotateY(180deg);
+  color: rgb(33, 54, 99);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: x-large;
+  font-size: large;
+  padding: 3px 6px;
 }
 
 .theback:before {
@@ -164,7 +164,142 @@ h3 {
 
 .theback button {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   padding: 10px 40px 10px 40px;
   border-radius: 20px;
+}
+
+.thecard2 {
+  position: absolute;
+  left: 700px;
+  width: 35%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.thecard2:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: url(./uñas3.png);
+  background-size: cover;
+  border-radius: 20%;
+}
+
+.theback2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: url(./uñas3.png);
+  background-size: cover;
+  border-radius: 20%;
+  transform: rotateY(180deg);
+  color: rgb(33, 54, 99);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  padding: 3px 6px;
+}
+
+.theback2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.theback2 button {
+  position: absolute;
+  bottom: 10%;
+  padding: 10px 40px 10px 40px;
+  border-radius: 20px;
+}
+
+.thecard3 {
+  position: absolute;
+  left: 350px;
+  width: 35%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.thecard3:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: url(./uñas4.png);
+  background-size: cover;
+  border-radius: 20%;
+}
+
+.theback3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: url(./uñas4.png);
+  background-size: cover;
+  border-radius: 20%;
+  transform: rotateY(180deg);
+  color: rgb(33, 54, 99);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  padding: 3px 6px;
+}
+
+.theback3:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.theback3 button {
+  position: absolute;
+  bottom: 10%;
+  padding: 10px 40px 10px 40px;
+  border-radius: 20px;
+}
+
+.price-container {
+  position: relative;
+  margin-left: 250px;
+  width: 1000px;
+  height: 600px;
+  background-color: blue;
+}
+
+.price1 {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: green;
 }
